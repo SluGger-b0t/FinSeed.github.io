@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+:root{
+    --bg-color: #222327;
+    --text-color: #fff;
+    --main-color: #90c543;
+}
+/* body{
+    min-height: 100vh;
+    background: var(--text-color);
+    color: var(--text-color);
+} */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color) ;
+    padding: 28px 12%;
+    transition: all .50s ease;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+
+}
+
+.logo i{
+    color: var(--main-color);
+    font-size: 28px;
+    margin-right: 3px;
+}
+
+.logo span{
+    color: var(--text-color);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0px;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+
+}
+
+.navbar a.active{
+    color: var(--main-color);
+}
+
+.main{
+    display: flex;
+}
+
+.main a{
+    margin-right: 25px;
+    margin-left: 10px;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.user i{
+    color: var(--main-color);
+    font-size: 28px;
+    margin-right: 7px;
+}
+
+.main a:hover{
+    color: var(--main-color);
+}
+
+
+/* CardTransition */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-image: url(green.jpg);
+    image-orientation: from-image;
+}
+.container{
+    position: relative;
+    display: flex;
+    top: 229px;
+    left: 100px;
+
+}
+.card{
+    bottom: 110px;
+    height: 425px;
+    width: 325px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+img{
+    height: 425px;
+    width: 325px;
+    border-radius: 3px;
+}
+.intro{
+    height: 100px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 105px;
+    background: rgb(144, 197, 67, .5);
+    color: white;
+
+}
+
+h1{
+    margin: 10px;
+    font-size: 40px;
+}
+
+p{
+   font-size: 20px;
+   margin: 20px; 
+   visibility: hidden;
+   opacity: 0;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+.card:hover .intro{
+    height: 220px;
+    bottom: 171px;
+    background: black;
+}
+
+.card:hover p{
+    opacity: 1;
+    bottom: 170px;
+    visibility: visible;
+}
+
+.card:hover img{
+    transform: scale(1.1);
+}
